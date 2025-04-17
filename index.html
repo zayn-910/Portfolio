@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centered Logo Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-md bg-dark p-3 fixed-top">
+    <div class="container-fluid">
+  
+      <!-- Toggle button -->
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Centered Logo -->
+      <div class="logo-center">
+        <a class="nav-link" href="">
+          <div class="image-container">
+            <img class="default-img" src="assets/whoami (1).svg" alt="Logo" />
+            <img class="hover-img" src="assets/whoami.svg" alt="Hover Logo" />
+          </div>
+        </a>
+      </div>
+  
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse flex-column flex-md-row justify-content-between align-items-center" id="navbarContent">
+        
+        <!-- Nav links -->
+        <ul class="navbar-nav mb-2 mb-md-0">
+          <li class="nav-item me-4">
+            <a class="nav-link btn btn-success text-light page2" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link btn btn-success text-light page2" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-success text-light page2" href="#contact">Contact</a>
+          </li>
+        </ul>
+  
+        
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid self mt-3">
+    <div class="container-fluid intro">
+      <img class="me" src="./assets/1730272537851.jpg" alt="me">
+    </div>
+
+    <div class="container-fluid name">
+      <h1 class="cursive"> <span>Za</span>yn Ma<span>lik </span> </h1>
+    </div>
+
+    <div class="container-fluid end">
+      <img class="line" src="./assets/line-horizontal-1-svgrepo-com.svg" alt="line" height="100">
+      <img class="line" src="./assets/line-horizontal-1-svgrepo-com.svg" alt="line" height="100">
+      <img class="star" src="./assets/star-favorite-1499-svgrepo-com.svg" alt="star" height="70">
+      <img class="line" src="./assets/line-horizontal-1-svgrepo-com.svg" alt="line" height="100">
+      <img class="line" src="./assets/line-horizontal-1-svgrepo-com.svg" alt="line" height="100">
+    </div>
+
+
+    <div class="container-fluid skill">
+      <h2 class="d-none d-md-block">Web Designer - Vulnerability Assessment - Programmer </h2>
+      <ul>
+        <h2 class="d-block d-md-none"><li>Web Designer</li></h2>
+        <h2 class="d-block d-md-none"><li>Vulnerability Assessment</li></h2>
+        <h2 class="d-block d-md-none"><li>Programmer</li></h2>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h1 class="page text-center text-uppercase mb-5">Portfolio</h1>
+        <!-- Icon Divider-->
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center g-4">
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><svg class="svg-inline--fa fa-plus fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
+                    </div>
+                    <img class="img-fluid" src="assets/html-16-svgrepo-com.svg" alt="...">
+                </div>
+            </div>
+            <!-- Portfolio Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><svg class="svg-inline--fa fa-plus fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
+                    </div>
+                    <img class="img-fluid" src="assets/css-16-svgrepo-com.svg" alt="...">
+                </div>
+            </div>
+            <!-- Portfolio Item 3-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><svg class="svg-inline--fa fa-plus fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
+                    </div>
+                    <img class="img-fluid" src="assets/javascript-16-svgrepo-com.svg" alt="...">
+                </div>
+            </div>
+            <!-- Portfolio Item 4-->
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><svg class="svg-inline--fa fa-plus fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
+                    </div>
+                    <img class="img-fluid" src="assets/python-16-svgrepo-com.svg" alt="...">
+                </div>
+            </div>
+            <!-- Portfolio Item 5-->
+            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><svg class="svg-inline--fa fa-plus fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
+                    </div>
+                    <img class="img-fluid" src="assets/kalilinux-svgrepo-com.svg" alt="...">
+                </div>
+            </div>
+            <!-- Portfolio Item 6-->
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><svg class="svg-inline--fa fa-plus fa-3x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"></path></svg><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com --></div>
+                    </div>
+                    <img class="img-fluid" src="assets/terminal-svgrepo-com.svg" alt="..." >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="page-section myself text-black mb-0" id="about">
+  <div class="container">
+      <!-- About Section Heading-->
+      <h1 class="page text-center text-uppercase mb-4">About</h1>
+      <!-- Icon Divider-->
+      <!-- About Section Content-->
+      <div class="row">
+          <div class="col-lg-4 ms-auto"><p class="lead">Hi! I'm a detail-oriented tech enthusiast with a growing passion for cybersecurity and web development. I enjoy diving into the world of ethical hacking, understanding vulnerabilities, and crafting responsive websites that not only look good but also function seamlessly.</p></div>
+          <div class="col-lg-4 me-auto"><p class="lead">I'm currently focused on sharpening my skills, building real-world projects, and exploring new tools that push my creativity and logic further. Beyond the screen, you'll often find me on the cricket field or dancing to good music—because a balanced life is a better life.</p></div>
+      </div>
+
+  </div>
+</section>
+
+
+<footer class="footer text-center bg-dark text-light" id="contact">
+  <div class="container ">
+      <div class="row">
+        <div class="mb-5">
+          <h4 class="text-uppercase mb-4 mt-4 page3"> Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/zayn9.1.0/"><img src="assets/instagram-svgrepo-com.svg" alt="" height="35"></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/zenul-aabedeen-khan-979851333/"><img src="assets/linkedin-161-svgrepo-com.svg" alt="" height="25"></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/zayn-910"><img src="assets/github-svgrepo-com.svg" alt="" height="30"></a>
+        </div>
+        
+      </div>
+  </div>
+</footer>
+
+
+<div class="copyright py-4 text-center text-white">
+  <div class="container"><small>Copyright © My Portfolio</small></div>
+</div>
+
+  
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Portfolio Modal 1 -->
+<div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModal1Label">HTML</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        I have solid experience with HTML, building responsive web structures and components from scratch using semantic markup.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Modal 2 -->
+<div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModal2Label">CSS</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        I specialize in modern CSS (Flexbox, Grid) and responsive design, including animations and layout structuring.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Modal 3 -->
+<div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModal3Label">JavaScript</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        I'm proficient in JavaScript and use it to add interactivity, handle DOM events, and work with APIs.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Modal 4 -->
+<div class="modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModal4Label">Python</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        I use Python for automation, scripting, and data handling. I'm familiar with libraries like NumPy and basics of Flask and Pandas.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Modal 5 -->
+<div class="modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModal5Label">Kali Linux</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        I have hands-on experience with Kali Linux tools for penetration testing, including Nmap, Burp Suite, and Metasploit.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio Modal 6 -->
+<div class="modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModal6Label">Terminal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        I'm comfortable with terminal commands for file handling, package management, and working with Git and Linux environments.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

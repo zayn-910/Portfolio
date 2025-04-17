@@ -1,0 +1,243 @@
+/* Desktop View - Centered Logo */
+.logo-center {
+  position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    left: auto;
+    transform: none;
+    z-index: 1050;
+}
+
+
+/* Image styles */
+.image-container {
+  position: relative;
+  width: 120px;
+  height: 30px;
+}
+
+.image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-img {
+  opacity: 0;
+}
+
+.image-container:hover .hover-img {
+  opacity: 1;
+}
+
+.image-container:hover .default-img {
+  opacity: 0;
+}
+
+
+.self {
+  height: 85vh;
+  background-color: cyan;
+}
+
+.intro {
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.me {
+    border-radius: 50%;
+    height: 200px;
+  
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  
+  
+}
+
+.cursive {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+span {
+  text-decoration: underline;
+}
+
+
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.end > img {
+  margin: 0px 8px 0px 8px;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.portfolio {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.heading {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    font-style: normal;
+    letter-spacing: 3px;
+  }
+
+
+  .page2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+
+  .page3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+  
+
+  .portfolio .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: black;
+  }
+
+
+  .portfolio .portfolio-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio .portfolio-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.lead {
+  font-size: 1.40rem;
+  font-weight: 300;
+}
+
+
+.myself {
+  background-color: cyan;
+}
+
+.btn-social {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.mx-1 {
+  margin-right: 0.25rem !important;
+  margin-left: 0.25rem !important;
+}
+
+
+.copyright {
+  background-color: darkslategray;
+}
+
+
+
+/* Mobile View - Logo top-right and fixed above all */
+@media (max-width: 767.98px) {
+  .logo-center {
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    left: auto;
+    transform: none;
+    z-index: 1050;
+  }
+   
+  .me {
+    margin-bottom: 5%;
+  }
+
+  .name {
+    align-items: flex-start;
+    height: 10vh;
+  }
+
+
+  .end > img {
+    height: 15vh;
+    width: 60px;
+  }
+
+  .navbar-collapse {
+    margin-top: 1.2rem; /* pushes dropdown content below the logo */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
