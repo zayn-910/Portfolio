@@ -206,6 +206,13 @@ span {
 }
 
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .self {
+    margin-top: 5rem;
+  }
+}
+
 
 /* Mobile View - Logo top-right and fixed above all */
 @media (max-width: 767.98px) {
