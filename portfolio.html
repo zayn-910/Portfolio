@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>zayn404</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#080b0a',
+          panel: '#0d1512',
+          panel2: '#101c17',
+          line: '#1c2b24',
+          green: '#39ff8f',
+          greendim: '#1f9e5c',
+          amber: '#ffb84d',
+          red: '#ff5c5c',
+          fg: '#d8e6de',
+          fgdim: '#7f958a',
+        },
+        fontFamily: {
+          mono: ['"JetBrains Mono"', 'monospace'],
+          sans: ['"Space Grotesk"', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="scanline bg-ink text-fg font-sans antialiased">
+
+<!-- NAV -->
+<nav id="topnav" class="fixed top-0 left-0 right-0 z-50 border-b border-line bg-ink/85 backdrop-blur">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#hero" class="font-mono text-sm text-green tracking-widest">root<span class="text-fgdim">@</span>zayn<span class="blink">_</span></a>
+    <div class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-widest text-fgdim">
+      <a href="#about" class="nav-link hover:text-fg transition">about</a>
+      <a href="#skills" class="nav-link hover:text-fg transition">skills</a>
+      <a href="#experience" class="nav-link hover:text-fg transition">experience</a>
+      <a href="#projects" class="nav-link hover:text-fg transition">projects</a>
+      <a href="#contact" class="nav-link hover:text-fg transition">contact</a>
+    </div>
+    <a href="#contact" class="hidden md:inline-block font-mono text-xs border border-greendim text-green px-4 py-2 hover:bg-green hover:text-ink transition">./connect</a>
+    <button id="menuBtn" class="md:hidden text-green font-mono text-xl">☰</button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden flex-col border-t border-line bg-ink font-mono text-xs uppercase tracking-widest">
+    <a href="#about" class="px-6 py-3 border-b border-line text-fgdim">about</a>
+    <a href="#skills" class="px-6 py-3 border-b border-line text-fgdim">skills</a>
+    <a href="#experience" class="px-6 py-3 border-b border-line text-fgdim">experience</a>
+    <a href="#projects" class="px-6 py-3 border-b border-line text-fgdim">projects</a>
+    <a href="#contact" class="px-6 py-3 text-fgdim">contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="relative min-h-screen flex items-center pt-24 pb-16 px-6">
+  <div class="max-w-6xl mx-auto w-full grid md:grid-cols-5 gap-10 items-center">
+    <div class="md:col-span-3">
+      <h1 class="font-mono text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-fg">
+        <span class="text-fgdim">&gt;</span> Zenul Aabedeen <span class="text-green glow-text">Khan</span>
+      </h1>
+      <p class="mt-4 text-lg sm:text-xl text-fgdim font-mono">Cybersecurity Student <span class="text-green">//</span> Aspiring SOC Analyst (Tier 1)</p>
+      <p class="mt-6 max-w-xl text-fg/80 leading-relaxed">
+        Blue-team focused cybersecurity student with hands-on lab experience in network forensics, SIEM-based threat detection, and log analysis — built up through self-directed learning since 2024. I also build independent security projects spanning deep packet inspection and blockchain-based forensic integrity verification.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#contact" class="font-mono text-sm bg-green text-ink px-6 py-3 font-semibold hover:bg-white transition">run contact.sh &rarr;</a>
+        <a href="#projects" class="font-mono text-sm border border-line text-fg px-6 py-3 hover:border-green transition">ls ./projects</a>
+      </div>
+    </div>
+    <div class="md:col-span-2">
+      <div class="flex justify-center mb-6">
+        <div class="relative">
+          <div class="w-36 h-36 sm:w-40 sm:h-40 rounded-full term-border bg-panel2 flex items-center justify-center overflow-hidden shadow-lg shadow-green/10">
+    
+            <img src="https://api.dicebear.com/7.x/bottts-neutral/svg?seed=ZenulKhan&backgroundColor=0d1512" alt="Zenul Aabedeen Khan" class="w-full h-full object-cover">
+          </div>
+          <span class="absolute bottom-2 right-2 w-4 h-4 rounded-full bg-green border-2 border-ink" title="Available"></span>
+        </div>
+      </div>
+      <div class="term-border bg-panel/70 backdrop-blur rounded-sm shadow-2xl shadow-black/40">
+        <div class="flex items-center gap-2 px-4 py-2 border-b border-line">
+          <span class="w-2.5 h-2.5 rounded-full bg-red/70"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-amber/70"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-green/70"></span>
+          <span class="ml-2 font-mono text-[11px] text-fgdim">whoami.sh — bash</span>
+        </div>
+        <div class="p-5 font-mono text-xs sm:text-[13px] leading-6 text-fg/90">
+          <p><span class="text-green">$</span> whoami</p>
+          <p class="text-fgdim">zenul_khan — B.Tech CSE(AI), 3rd Year</p>
+          <p class="mt-2"><span class="text-green">$</span> location</p>
+          <p class="text-fgdim">Jaipur, Rajasthan, India</p>
+          <p class="mt-2"><span class="text-green">$</span> tools --top 5</p>
+          <p class="text-fgdim">Splunk, Wireshark, Burp Suite, VirusTotal, Volatility3</p>
+          <p class="mt-2"><span class="text-green">$</span> projects --count</p>
+          <p class="text-fgdim">3 independent builds, self-directed since 2024</p>
+          <p class="mt-2"><span class="text-green">$</span> <span class="blink">_</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 px-6 border-t border-line">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-up flex items-baseline gap-3 mb-10">
+      <span class="font-mono text-green text-sm">01</span>
+      <h2 class="font-mono text-2xl sm:text-3xl font-bold">About</h2>
+      <span class="flex-1 h-px bg-line"></span>
+    </div>
+    <div class="grid md:grid-cols-5 gap-12">
+      <div class="md:col-span-3 fade-up">
+        <p class="text-fg/85 leading-relaxed text-lg">
+          I'm a third-year B.Tech (CSE-AI) student building a career on the defensive side of security. My focus is the SOC analyst workflow end to end — monitoring alerts, correlating events across log sources, and escalating what actually matters instead of chasing noise.
+        </p>
+        <p class="mt-5 text-fg/70 leading-relaxed">
+          Beyond labs, I build. I've written a real-time deep packet inspection tool from scratch in C++17, designed a blockchain-based proof-of-concept that anchors forensic packet captures on Ethereum for tamper-evident chain of custody, and shipped a travel booking website end to end. That builder's perspective — knowing how systems are put together — sharpens how I think about how they get broken into.
+        </p>
+        <div class="mt-8 grid grid-cols-2 gap-4 font-mono text-xs">
+          <div class="term-border bg-panel/60 px-4 py-3">
+            <p class="text-green text-lg font-bold">3</p>
+            <p class="text-fgdim mt-1">independent security &amp; dev projects</p>
+          </div>
+          <div class="term-border bg-panel/60 px-4 py-3">
+            <p class="text-green text-lg font-bold">4</p>
+            <p class="text-fgdim mt-1">focus areas: SIEM, forensics, network, AppSec</p>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-2 fade-up">
+        <div class="term-border bg-panel/60 p-6">
+          <p class="font-mono text-xs text-amber mb-4 tracking-widest">CORE STRENGTHS</p>
+          <ul class="space-y-3 font-mono text-sm text-fg/85">
+            <li class="flex gap-2"><span class="text-green">▸</span>SIEM-based threat detection &amp; log correlation</li>
+            <li class="flex gap-2"><span class="text-green">▸</span>Network forensics &amp; PCAP investigation</li>
+            <li class="flex gap-2"><span class="text-green">▸</span>Low-level systems programming (C++)</li>
+            <li class="flex gap-2"><span class="text-green">▸</span>Clear, evidence-based incident reporting</li>
+            <li class="flex gap-2"><span class="text-green">▸</span>Builder's perspective on web &amp; security</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 px-6 border-t border-line bg-panel/20">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-up flex items-baseline gap-3 mb-10">
+      <span class="font-mono text-green text-sm">02</span>
+      <h2 class="font-mono text-2xl sm:text-3xl font-bold">Skills</h2>
+      <span class="flex-1 h-px bg-line"></span>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+      <div class="fade-up term-border bg-panel/60 p-6">
+        <p class="font-mono text-xs text-amber tracking-widest mb-5">SIEM &amp; DETECTION</p>
+        <div class="space-y-4">
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>Splunk (SPL, BOTS)</span><span class="text-fgdim">Proficient</span></div><div class="skillbar"><span data-w="88"></span></div></div>
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>Log Analysis &amp; Correlation</span><span class="text-fgdim">Proficient</span></div><div class="skillbar"><span data-w="85"></span></div></div>
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>MITRE ATT&amp;CK / IOC / TTP</span><span class="text-fgdim">Working</span></div><div class="skillbar"><span data-w="75"></span></div></div>
+        </div>
+      </div>
+      <div class="fade-up term-border bg-panel/60 p-6">
+        <p class="font-mono text-xs text-amber tracking-widest mb-5">FORENSICS &amp; NETWORK</p>
+        <div class="space-y-4">
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>Wireshark / PCAP Analysis</span><span class="text-fgdim">Proficient</span></div><div class="skillbar"><span data-w="85"></span></div></div>
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>Network Forensics</span><span class="text-fgdim">Proficient</span></div><div class="skillbar"><span data-w="82"></span></div></div>
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>Volatility / Nmap</span><span class="text-fgdim">Working</span></div><div class="skillbar"><span data-w="70"></span></div></div>
+        </div>
+      </div>
+      <div class="fade-up term-border bg-panel/60 p-6">
+        <p class="font-mono text-xs text-amber tracking-widest mb-5">APPSEC</p>
+        <div class="space-y-4">
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>VAPT / Burp Suite</span><span class="text-fgdim">Working</span></div><div class="skillbar"><span data-w="75"></span></div></div>
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>OWASP Top 10</span><span class="text-fgdim">Working</span></div><div class="skillbar"><span data-w="78"></span></div></div>
+        </div>
+      </div>
+      <div class="fade-up term-border bg-panel/60 p-6">
+        <p class="font-mono text-xs text-amber tracking-widest mb-5">SYSTEMS &amp; SCRIPTING</p>
+        <div class="space-y-4">
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>Linux (Kali, Ubuntu)</span><span class="text-fgdim">Proficient</span></div><div class="skillbar"><span data-w="87"></span></div></div>
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>C++17 / libpcap</span><span class="text-fgdim">Working</span></div><div class="skillbar"><span data-w="78"></span></div></div>
+          <div><div class="flex justify-between font-mono text-xs mb-1.5"><span>Python / Bash / PowerShell</span><span class="text-fgdim">Working</span></div><div class="skillbar"><span data-w="76"></span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade-up">
+      <p class="font-mono text-xs text-amber tracking-widest mb-4">SOFT SKILLS &amp; OTHER</p>
+      <div class="flex flex-wrap gap-3 font-mono text-xs">
+        <span class="term-border px-4 py-2 text-fg/80">Analytical thinking</span>
+        <span class="term-border px-4 py-2 text-fg/80">Incident documentation</span>
+        <span class="term-border px-4 py-2 text-fg/80">Attention to detail</span>
+        <span class="term-border px-4 py-2 text-fg/80">Clear written reporting</span>
+        <span class="term-border px-4 py-2 text-fg/80">Self-directed learning</span>
+        <span class="term-border px-4 py-2 text-fg/80">Solidity</span>
+        <span class="term-border px-4 py-2 text-fg/80">Hardhat</span>
+        <span class="term-border px-4 py-2 text-fg/80">Ethers.js</span>
+        <span class="term-border px-4 py-2 text-fg/80">OSINT Tools</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-24 px-6 border-t border-line">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-up flex items-baseline gap-3 mb-14">
+      <span class="font-mono text-green text-sm">03</span>
+      <h2 class="font-mono text-2xl sm:text-3xl font-bold">Experience</h2>
+      <span class="flex-1 h-px bg-line"></span>
+    </div>
+
+    <div class="relative pl-8">
+      <div class="absolute left-[7px] top-1 bottom-1 w-px timeline-line"></div>
+
+      <div class="fade-up relative mb-14">
+        <span class="absolute -left-8 top-1 w-3.5 h-3.5 rounded-full bg-green border-2 border-ink shadow shadow-green/40"></span>
+        <p class="font-mono text-xs text-amber">APR 2026 – PRESENT · REMOTE</p>
+        <h3 class="font-mono text-lg font-semibold mt-1">CyberDefenders — Blue Team Labs</h3>
+        <ul class="mt-3 space-y-2 text-fg/75 text-sm leading-relaxed list-disc list-inside">
+          <li>Completed scenario-based labs in network forensics, malware analysis, and incident response</li>
+          <li>Analyzed PCAP files, Windows event logs, and memory artifacts to reconstruct attack timelines</li>
+        </ul>
+      </div>
+
+      <div class="fade-up relative mb-14">
+        <span class="absolute -left-8 top-1 w-3.5 h-3.5 rounded-full bg-green border-2 border-ink shadow shadow-green/40"></span>
+        <p class="font-mono text-xs text-amber">MAY 2026 – PRESENT · SELF-DIRECTED</p>
+        <h3 class="font-mono text-lg font-semibold mt-1">Splunk SIEM — Boss of the SOC (BOTS) Dataset</h3>
+        <ul class="mt-3 space-y-2 text-fg/75 text-sm leading-relaxed list-disc list-inside">
+          <li>Investigated attack scenarios using Splunk SPL queries against the BOTS dataset</li>
+          <li>Correlated multi-source events (web, endpoint, network) to reconstruct attacker kill chains</li>
+        </ul>
+      </div>
+
+      <div class="fade-up relative">
+        <span class="absolute -left-8 top-1 w-3.5 h-3.5 rounded-full bg-green border-2 border-ink shadow shadow-green/40"></span>
+        <p class="font-mono text-xs text-amber">MAY 2025 – PRESENT · CONTROLLED LAB ENVIRONMENTS</p>
+        <h3 class="font-mono text-lg font-semibold mt-1">Web Application Security Testing / VAPT</h3>
+        <ul class="mt-3 space-y-2 text-fg/75 text-sm leading-relaxed list-disc list-inside">
+          <li>Conducted web application assessments using Burp Suite to identify XSS, SQLi, and auth flaws</li>
+          <li>Applied the OWASP Top 10 framework to systematically test and document vulnerabilities</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="fade-up mt-16">
+      <div class="term-border bg-panel/60 p-6 max-w-md">
+        <p class="font-mono text-xs text-amber tracking-widest mb-2">EDUCATION</p>
+        <p class="font-mono font-semibold">B.Tech — CSE (AI)</p>
+        <p class="text-fg/70 text-sm mt-1">Anand International College of Engineering, Jaipur</p>
+        <p class="text-fgdim text-xs mt-1 font-mono">3rd Year · Expected Graduation 2028 · Available for internships</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24 px-6 border-t border-line bg-panel/20">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-up flex items-baseline gap-3 mb-10">
+      <span class="font-mono text-green text-sm">04</span>
+      <h2 class="font-mono text-2xl sm:text-3xl font-bold">Projects</h2>
+      <span class="flex-1 h-px bg-line"></span>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-16">
+      <!-- Packhash -->
+      <div class="fade-up term-border bg-panel/60 p-6 flex flex-col hover:-translate-y-1 transition duration-300">
+        <div class="flex items-center justify-between mb-4">
+          <span class="font-mono text-[10px] px-2 py-1 border border-greendim text-green">BLOCKCHAIN · FORENSICS</span>
+          <span class="font-mono text-[11px] text-fgdim">SEP 2026</span>
+        </div>
+        <h3 class="font-mono font-semibold text-lg">Packhash</h3>
+        <p class="text-fg/65 text-sm mt-3 leading-relaxed flex-1">Blockchain-based integrity verification for packet captures. Proof-of-concept using Solidity, Hardhat, and Ethers.js to anchor a Merkle root fingerprint of captured PCAP data on a local Ethereum blockchain — enabling tamper detection with pinpoint accuracy, down to the exact altered packet's timestamp, source/destination IP, and domain.</p>
+        <p class="mt-4 font-mono text-xs text-fgdim">Solidity · Hardhat · Ethers.js · Merkle Trees</p>
+        <a href="https://github.com/zayn-910/Packhash" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 font-mono text-xs border border-greendim text-green px-4 py-2 hover:bg-green hover:text-ink transition w-fit">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          view on GitHub
+        </a>
+      </div>
+
+      <!-- C++ Sniffer -->
+      <div class="fade-up term-border bg-panel/60 p-6 flex flex-col hover:-translate-y-1 transition duration-300">
+        <div class="flex items-center justify-between mb-4">
+          <span class="font-mono text-[10px] px-2 py-1 border border-greendim text-green">TOOLING</span>
+          <span class="font-mono text-[11px] text-fgdim">FEB 2026</span>
+        </div>
+        <h3 class="font-mono font-semibold text-lg">Network Traffic Analyzer</h3>
+        <p class="text-fg/65 text-sm mt-3 leading-relaxed flex-1">A CLI-based network traffic analyzer built in C++17 using libpcap, with real-time deep packet inspection decoding Ethernet, IP, TCP, UDP, ICMP, and ARP. Implements real-time port scan detection (tracking unique port hits per IP) and ASCII payload extraction, with color-coded alerts and persistent activity logging.</p>
+        <p class="mt-4 font-mono text-xs text-fgdim">C++17 · libpcap · Port Scan Detection</p>
+        <div class="mt-4 font-mono text-[11px] bg-ink term-border p-3 leading-5 text-fg/70">
+          <p class="text-fgdim">$ sudo ./sniffer eth0</p>
+          <p class="text-green">[+] listening on eth0...</p>
+          <p class="text-red">[ALERT] port scan detected: 192.168.1.4</p>
+        </div>
+        <a href="https://github.com/zayn-910/sniffer" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 font-mono text-xs border border-greendim text-green px-4 py-2 hover:bg-green hover:text-ink transition w-fit">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          view on GitHub
+        </a>
+      </div>
+
+      <!-- JoyMakersHoliday -->
+      <div class="fade-up term-border bg-panel/60 p-6 flex flex-col hover:-translate-y-1 transition duration-300">
+        <div class="flex items-center justify-between mb-4">
+          <span class="font-mono text-[10px] px-2 py-1 border border-greendim text-green">WEB</span>
+          <span class="font-mono text-[11px] text-fgdim">2026</span>
+        </div>
+        <h3 class="font-mono font-semibold text-lg">JoyMakersHoliday.com</h3>
+        <p class="text-fg/65 text-sm mt-3 leading-relaxed flex-1">Built and deployed joymakersholiday.com, a travel and holiday booking website, handling UI design and client-side functionality end to end.</p>
+        <p class="mt-4 font-mono text-xs text-fgdim">UI Design · Client-Side Development</p>
+        <a href="https://joymakersholiday.com/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 font-mono text-xs bg-green text-ink px-4 py-2 font-semibold hover:bg-white transition w-fit">
+          visit site &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Labs & Learning -->
+    <div class="fade-up flex items-baseline gap-3 mb-8">
+      <h3 class="font-mono text-lg font-semibold text-fg/90">Labs &amp; Learning</h3>
+      <span class="flex-1 h-px bg-line"></span>
+      <span class="font-mono text-xs text-fgdim">hands-on practice, not standalone builds</span>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="fade-up term-border bg-panel/40 p-6 hover:-translate-y-1 transition duration-300">
+        <span class="font-mono text-[10px] px-2 py-1 border border-line text-fgdim">FORENSICS</span>
+        <h4 class="font-mono font-semibold text-base mt-4">CyberDefenders Blue Team Labs</h4>
+        <p class="text-fg/60 text-sm mt-3 leading-relaxed">Scenario-based labs across network forensics, malware analysis, and incident response using PCAP files, Windows event logs, and memory artifacts.</p>
+        <p class="mt-4 font-mono text-xs text-fgdim">Wireshark · PCAP · IOC mapping</p>
+      </div>
+
+      <div class="fade-up term-border bg-panel/40 p-6 hover:-translate-y-1 transition duration-300">
+        <span class="font-mono text-[10px] px-2 py-1 border border-line text-fgdim">SIEM</span>
+        <h4 class="font-mono font-semibold text-base mt-4">BOTS Kill-Chain Correlation</h4>
+        <p class="text-fg/60 text-sm mt-3 leading-relaxed">SPL query work against the Boss of the SOC dataset to correlate web, endpoint, and network logs into a single attacker timeline.</p>
+        <p class="mt-4 font-mono text-xs text-fgdim">Splunk · SPL · MITRE ATT&amp;CK</p>
+      </div>
+
+      <div class="fade-up term-border bg-panel/40 p-6 hover:-translate-y-1 transition duration-300">
+        <span class="font-mono text-[10px] px-2 py-1 border border-line text-fgdim">APPSEC</span>
+        <h4 class="font-mono font-semibold text-base mt-4">OWASP Top 10 Lab Assessment</h4>
+        <p class="text-fg/60 text-sm mt-3 leading-relaxed">Structured VAPT pass across lab web apps using Burp Suite — XSS, SQLi, and broken auth flaws identified and reported.</p>
+        <p class="mt-4 font-mono text-xs text-fgdim">Burp Suite · OWASP Top 10</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 px-6 border-t border-line">
+  <div class="max-w-6xl mx-auto">
+    <div class="fade-up flex items-baseline gap-3 mb-10">
+      <span class="font-mono text-green text-sm">05</span>
+      <h2 class="font-mono text-2xl sm:text-3xl font-bold">Contact</h2>
+      <span class="flex-1 h-px bg-line"></span>
+    </div>
+
+    <div class="grid md:grid-cols-5 gap-12">
+      <div class="md:col-span-2 fade-up">
+        <p class="text-fg/80 leading-relaxed">
+          Want to talk about detection engineering, log analysis, blue-team labs, or any of the projects above? My inbox is open.
+        </p>
+        <div class="mt-8 space-y-4 font-mono text-sm">
+          <a href="mailto:khanzenul667@email.com" class="flex items-center gap-3 text-fg/85 hover:text-green transition">
+            <span class="text-green">✉</span> khanzenul667@email.com
+          </a>
+          <a href="https://linkedin.com/in/zenul-aabedeen-khan" target="_blank" class="flex items-center gap-3 text-fg/85 hover:text-green transition">
+            <span class="text-green">in</span> linkedin.com/in/zenul-aabedeen-khan
+          </a>
+          <p class="flex items-center gap-3 text-fg/60">
+            <span class="text-green">📍</span> Jaipur, Rajasthan, India
+          </p>
+        </div>
+      </div>
+
+      <div class="md:col-span-3 fade-up">
+        <form id="contactForm" class="term-border bg-panel/60 p-6 space-y-5">
+          <div>
+            <label class="block font-mono text-xs text-fgdim mb-2">NAME</label>
+            <input type="text" required class="w-full bg-ink border border-line focus:border-green px-4 py-3 font-mono text-sm text-fg transition" placeholder="Your name">
+          </div>
+          <div>
+            <label class="block font-mono text-xs text-fgdim mb-2">EMAIL</label>
+            <input type="email" required class="w-full bg-ink border border-line focus:border-green px-4 py-3 font-mono text-sm text-fg transition" placeholder="you@example.com">
+          </div>
+          <div>
+            <label class="block font-mono text-xs text-fgdim mb-2">MESSAGE</label>
+            <textarea rows="4" required class="w-full bg-ink border border-line focus:border-green px-4 py-3 font-mono text-sm text-fg transition resize-none" placeholder="Let's talk..."></textarea>
+          </div>
+          <button type="submit" class="font-mono text-sm bg-green text-ink px-6 py-3 font-semibold hover:bg-white transition w-full sm:w-auto">
+            send_message()
+          </button>
+          <p id="formStatus" class="font-mono text-xs text-green hidden">&gt; message queued. thanks — I'll reply soon.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-line py-8 px-6 text-center font-mono text-xs text-fgdim">
+  © 2026 Zenul Aabedeen Khan · built with intent · logging off <span class="text-green">_</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

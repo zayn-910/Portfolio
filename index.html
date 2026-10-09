@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>302 Found — zayn404</title>
+<meta http-equiv="refresh" content="1.6; url=portfolio.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #080b0a;
+    --line: #1c2b24;
+    --green: #39ff8f;
+    --greendim: #1f9e5c;
+    --amber: #ffb84d;
+    --fg: #d8e6de;
+    --fgdim: #7f958a;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; height: 100%;
+    background-color: var(--ink);
+    background-image:
+      linear-gradient(rgba(57,255,143,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(57,255,143,0.035) 1px, transparent 1px);
+    background-size: 42px 42px;
+    color: var(--fg);
+    font-family: "JetBrains Mono", monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .scanline::before {
+    content: "";
+    position: fixed; inset: 0; pointer-events: none;
+    background: repeating-linear-gradient(180deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 3px);
+  }
+  .card {
+    border: 1px solid var(--line);
+    background: rgba(13,21,18,0.7);
+    backdrop-filter: blur(6px);
+    padding: 2rem 2.25rem;
+    border-radius: 2px;
+    width: min(92vw, 440px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+  .bar {
+    display: flex; align-items: center; gap: 0.5rem;
+    padding-bottom: 0.9rem; margin-bottom: 1.1rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .code {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--green);
+    text-shadow: 0 0 22px rgba(57,255,143,0.4);
+    line-height: 1;
+  }
+  .label {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--amber);
+    margin-top: 0.4rem;
+  }
+  .line { font-size: 0.82rem; color: var(--fgdim); margin-top: 1.1rem; line-height: 1.6; }
+  .line .to { color: var(--fg); }
+  .blink { animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .progress {
+    margin-top: 1.4rem;
+    height: 3px;
+    width: 100%;
+    background: var(--line);
+    overflow: hidden;
+    border-radius: 2px;
+  }
+  .progress > span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--greendim), var(--green));
+    animation: fill 1.4s ease forwards;
+  }
+  @keyframes fill { to { width: 100%; } }
+  noscript a { color: var(--green); }
+</style>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+      window.location.href = 'portfolio.html';
+    }, 1500);
+  });
+</script>
+</head>
+<body class="scanline">
+  <div class="card">
+    <div class="bar">
+      <span class="dot" style="background:#ff5c5c"></span>
+      <span class="dot" style="background:#ffb84d"></span>
+      <span class="dot" style="background:#39ff8f"></span>
+      <span style="margin-left:0.5rem; font-size:0.7rem; color:var(--fgdim);">GET /zayn404 HTTP/1.1</span>
+    </div>
+    <div class="code">302</div>
+    <div class="label">FOUND</div>
+    <p class="line">
+      Location: <span class="to">/portfolio</span><br>
+      redirecting<span class="blink">_</span>
+    </p>
+    <div class="progress"><span></span></div>
+  </div>
+  <noscript>
+    <p style="position:fixed;bottom:1.5rem;font-size:0.8rem;color:var(--fgdim);">
+      JavaScript disabled — <a href="portfolio.html">continue to the portfolio</a>.
+    </p>
+  </noscript>
+</body>
+</html>
